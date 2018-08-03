@@ -16,6 +16,7 @@ import Network from '../../utils/Network'
 import { ButtonGroup, Header } from "react-native-elements";
 import Separator from "../view/Separator";
 import SplashScreen from "react-native-splash-screen";
+import Orientation from "react-native-orientation";
 
 const buttons = ['正在热映', '即将上映']
 class FilmScreen extends Component {
@@ -33,20 +34,33 @@ class FilmScreen extends Component {
         }
     }
 
+
     componentDidMount() {
         SplashScreen.hide()
+        Orientation.addOrientationListener(this._orientationDidChange.bind(this))
         this._fetchData()
     }
 
-    _updateSelectedIndex(selectedIndex) {
+    componentWillUnmount(){
+        Orientation.removeOrientationListener()
+    }
 
+    _orientationDidChange (orientation){
+        if (orientation === 'PORTRAIT') {
+            this._scrollView.scrollTo({ x: Constant.Screen.Width * this.state.selectedIndex, y: 0, animated: true })
+        }
+    }
+
+    _updateSelectedIndex(selectedIndex) {
+        
         this._scrollView.scrollTo({ x: Constant.Screen.Width * selectedIndex, y: 0, animated: true })
+
         this.setState({
             selectedIndex: selectedIndex
         }, () => {
 
             const { total, selectedIndex } = this.state
-
+            
             if (total[selectedIndex] == 0) {
                 this._fetchData()
             }
@@ -153,7 +167,7 @@ class FilmScreen extends Component {
             <View style={styles.container}>
                 <Header
                     marginTop={Constant.SafeTop}
-                    backgroundColor='white'
+                    backgroundColor='white'   
                 >
                     <ButtonGroup
                         disableSelected={true}

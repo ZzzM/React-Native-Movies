@@ -19,7 +19,7 @@ import Separator from "../view/Separator";
 import Star from '../view/Star'
 
 import Icon from "react-native-vector-icons/FontAwesome";
-
+import Orientation from "react-native-orientation";
 
 
 

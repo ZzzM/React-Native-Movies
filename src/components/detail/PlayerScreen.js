@@ -44,15 +44,15 @@ class PlayerScreen extends Component {
         }
     }
 
-
-    componentDidMount() {
+    componentWillMount(){
         Orientation.lockToLandscapeRight()
-          // this._player.presentFullscreenPlayer()
     }
 
+    // componentDidMount() {
+        
+    // }
     componentWillUnmount(){
         Orientation.lockToPortrait()
-       
     }
 
     render() {
@@ -64,7 +64,9 @@ class PlayerScreen extends Component {
     
         return (
 
-            <SafeAreaView style={{position:'absolute',left:0,bottom:0,top:0,right:0,backgroundColor:'black'}}>
+            //<SafeAreaView style={{position:'absolute',left:0,bottom:0,top:0,right:0,backgroundColor:'black'}}>
+
+            <SafeAreaView style={{flex:1,backgroundColor:'black'}}>
 
                 <Video
       

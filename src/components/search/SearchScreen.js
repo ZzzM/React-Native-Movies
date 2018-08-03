@@ -79,6 +79,7 @@ class SearchScreen extends Component {
                     this._fetchData()
                 }, Constant.QueryTimeout)
             } else {
+
                 this.setState({
                     loading: false,
                     refreshing: false,
@@ -104,7 +105,7 @@ class SearchScreen extends Component {
                     resizeMode='stretch'
                     style={{ height: 50, width: 50, borderRadius: 25 }}
                     source={{ url: images.large.replace('webp', 'png') }} />
-                <View style={{ marginLeft: 10 }}>
+                <View style={{ marginLeft: 10,flex:1 }}>
                     <Text style={{fontSize:18,color: Constant.Color.Font3,lineHeight:30 }}>
                         {title}
                     </Text>
@@ -145,11 +146,13 @@ class SearchScreen extends Component {
 
     render() {
 
-        const { query, loading, data, refreshing } = this.state
+        const {query, loading, data, refreshing } = this.state
 
         return (
             <View style={{ flex: 1, backgroundColor: 'white', paddingTop: Constant.SafeTop }}>
+   
                 <SearchBar
+
                     lightTheme
                     containerStyle={{
                         backgroundColor: Constant.Color.Clear,
@@ -159,10 +162,9 @@ class SearchScreen extends Component {
                         color: Constant.Color.Theme,
                         backgroundColor: Constant.Color.Clear
                     }}
-
+                 
                     onChangeText={this._queryChanged.bind(this)}
-                    value={query}
-
+                    //value={query}
                     icon={{ type: 'material', name: 'search' }}
                     clearIcon
                     placeholder='搜索电影/电视剧' />
@@ -191,7 +193,6 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         paddingVertical: 10,
         paddingHorizontal: 15,
-        height: 70,
     },
 })
 
