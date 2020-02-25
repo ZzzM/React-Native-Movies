@@ -1,4 +1,4 @@
-# Movies By ReactNative
+# ReactNative Movies
 这是一个基于[豆瓣Api](https://developers.douban.com/wiki/?title=api_v2) 使用 [ReactNative](https://github.com/facebook/react-native) 开发的App。
 （目前只适配 iOS）
 
