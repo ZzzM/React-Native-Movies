@@ -1,5 +1,5 @@
 # ReactNative Movies
-这是一个基于豆瓣Api使用 [ReactNative](https://github.com/facebook/react-native) 开发的App。
+一款基于豆瓣 Api 使用 ReactNative 开发的移动端应用。
 （目前只适配 iOS）
 - react: 16.3.1
 - react-native: 0.55.4
