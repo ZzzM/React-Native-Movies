@@ -1,15 +1,21 @@
-# ReactNative Movies
-一款基于豆瓣 Api 使用 ReactNative 开发的移动端应用。
-（目前只适配 iOS）
+# React Native Movies
+
+A movies news app developed by React Native（***API is no longer available***）
+
+
+
+
+## Environment
 - react: 16.3.1
 - react-native: 0.55.4
-- 运行环境：iOS 8.0 或以上（暂未适配 Android）
+- iOS 8.0 or later
 
-## App Preview
+
+## Snapshots
 ![](previews/preview_1.gif)
 ![](previews/preview_2.gif)
 
-## Plugins Used
+## Libraries
 * [react-native-elements](https://github.com/react-native-training/react-native-elements)
 * [react-native-lightbox](https://github.com/oblador/react-native-lightbox)
 * [react-native-orientation](https://github.com/yamill/react-native-orientation)
