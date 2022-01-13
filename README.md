@@ -1,14 +1,13 @@
 # React Native Movies
 
-A movies news app developed by React Native（***API is no longer available***）
+A movies news App developed by React Native（ ⚠️ **API is no longer available** ）
+
+## Features
+- [x] Video play
 
 
-
-
-## Environment
-- react: 16.3.1
-- react-native: 0.55.4
-- iOS 8.0 or later
+## Compatibility
+- Requires **iOS 12.0** or later
 
 
 ## Snapshots
