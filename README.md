@@ -1,4 +1,11 @@
-# React Native Movies
+
+<h1>
+React Native Movies</br>
+<a href="https://raw.githubusercontent.com/ZzzM/React-Native-Movies/master/LICENSE"><img src="https://img.shields.io/github/license/ZzzM/React-Native-Movies"></a>
+<a href="https://zzzm.github.io/2020/02/25/movies_rn/">
+<img src="https://img.shields.io/badge/docs-%E4%B8%AD%E6%96%87-red">
+</a>
+</h1>
 
 A movies news App developed by React Native（ ⚠️ **API is no longer available** ）
 
