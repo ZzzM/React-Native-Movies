@@ -21,7 +21,7 @@ A movies news App developed by React Native（ ⚠️ **API is no longer availab
 ![](previews/preview_1.gif)
 ![](previews/preview_2.gif)
 
-## Libraries
+## Dependencies
 * [react-native-elements](https://github.com/react-native-training/react-native-elements)
 * [react-native-lightbox](https://github.com/oblador/react-native-lightbox)
 * [react-native-orientation](https://github.com/yamill/react-native-orientation)
