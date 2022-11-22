@@ -7,7 +7,7 @@ React Native Movies</br>
 </a>
 </h1>
 
-A movies news App developed by React Native（ ⚠️ **API is no longer available** ）
+A mobile app for movie information based on React Native（ ❌ **API is unavailable** ）
 
 ## Features
 - [x] Video play
